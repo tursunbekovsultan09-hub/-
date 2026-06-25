@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жумаш Раимкулов атындагы №67 кесиптик лицей</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d4e6f0; /* background түс */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 30px 20px;
+        }
+
+        .card {
+            max-width: 900px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(10, 40, 60, 0.2);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(145deg, #1a3d4f, #0d2a38);
+            color: #f0f8ff;
+            padding: 38px 30px 30px;
+            text-align: center;
+            border-bottom: 6px solid #d9a843;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 0 rgba(0,0,0,0.25);
+        }
+
+        .header h1 small {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #cde0ec;
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+
+        .header .sub-info {
+            margin-top: 14px;
+            font-size: 1rem;
+            font-weight: 300;
+            color: #b8d2e0;
+            border-top: 1px solid rgba(255,255,255,0.12);
+            padding-top: 14px;
+            display: inline-block;
+        }
+
+        .header .sub-info i {
+            margin: 0 6px;
+            color: #d9a843;
+        }
+
+        /* Мазмун */
+        .content {
+            padding: 35px 35px 30px;
+        }
+
+        /* 2 абзац текст */
+        .text-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #1e313c;
+            margin-bottom: 22px;
+            text-align: justify;
+            background: #f6fbfe;
+            padding: 20px 26px;
+            border-radius: 18px;
+            border-left: 6px solid #d9a843;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+            transition: 0.2s;
+        }
+
+        .text-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .text-section p strong {
+            color: #1a4f63;
+            font-weight: 600;
+        }
+
+        .text-section p .highlight {
+            background: #eef3d8;
+            padding: 0 6px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        /* Сүрөт */
+        .image-wrapper {
+            margin: 28px 0 8px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 12px 28px rgba(0, 30, 50, 0.18);
+            background: #d4e2ea;
+            transition: 0.3s;
+        }
+
+        .image-wrapper img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 420px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .image-wrapper:hover img {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            text-align: right;
+            font-size: 0.85rem;
+            color: #4d7488;
+            padding: 10px 8px 0;
+            letter-spacing: 0.3px;
+        }
+
+        .image-caption i {
+            margin-right: 6px;
+            color: #d9a843;
+        }
+
+        /* адаптив */
+        @media (max-width: 640px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .header h1 small {
+                font-size: 1rem;
+            }
+            .content {
+                padding: 22px 16px 25px;
+            }
+            .text-section p {
+                font-size: 1rem;
+                padding: 16px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <!-- HEADER -->
+    <div class="header">
+        <h1>
+            Жумаш Раимкулов атындагы №67 кесиптик лицей
+            <small>Башталгыч кесиптик билим берүү мекемеси</small>
+        </h1>
+        <span class="sub-info">
+            <i class="fas fa-map-pin"></i> Ош облусу, Алай району, Гүлчө ш.
+            <i class="fas fa-calendar-alt" style="margin-left: 16px;"></i> 1974-жылдан бери
+        </span>
+    </div>
+
+    <!-- МАЗМУН -->
+    <div class="content">
+        <!-- 2 абзац текст (лицей жөнүндө) -->
+        <div class="text-section">
+            <p>
+                <strong>Жумаш Раимкулов атындагы №67 кесиптик лицей</strong> – Ош облусунун Алай районундагы алдыңкы кесиптик окуу жайлардын бири. 
+                Лицей 1974–1975-жылдары негизделип, 1999–2000-окуу жылынан баштап кесиптик лицей статусун алган. 
+                Бүгүнкү күндө лицейде <span class="highlight">15тен ашык кесип</span> боюнча адистер даярдалып, окуучулар заманбап технологиялар, курулуш, дизайн, 
+                айыл чарба жана тейлөө чөйрөсүндө терең билим алышат. Окуу жайдын базасында 20 кабинет, 2 лаборатория, 
+                заманбап устаканалар, компьютердик класстар жана 15 000 китеп фонду бар китепкана иштейт.
+            </p>
+            <p>
+                Лицейдин <strong>инфраструктурасы</strong> 300 орундуу жатакана, 100 орундуу ашкана, спорт залы жана ачык спорт аянтчалары менен толук камсыздалган. 
+                Педагогдук жамаатта 55 мугалим жана устат иштейт, алардын 35и жогорку билимдүү, 5и эмгек сиңирген мугалимдер. 
+                Окуучулар жыл сайын республикалык жана эл аралык чемпионаттарда жеңиштерге ээ болуп, лицейдин атын бийик көтөрүшүүдө. 
+                <span class="highlight">Миссиябыз</span> – эмгек рыногунда суроо-талапка ээ, жаңы технологияларды өздөштүргөн, 
+                бүтүрүүчүлөрдүн ишке орношуна жана кесиптик өсүшүнө шарт түзүү.
+            </p>
+        </div>
+
+        <!-- 1 сүрөт (лицейдин заманбап имараты) -->
+        <div class="image-wrapper">
+            <img 
+                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&h=450&fit=crop&crop=center&auto=format" 
+                alt="Жумаш Раимкулов атындагы №67 кесиптик лицей — окуу корпусу жана кампус"
+                title="№67 кесиптик лицейдин башкы имараты"
+            >
+        </div>
+        <div class="image-caption">
+            <i class="fas fa-building"></i> Ж. Раимкулов атындагы №67 кесиптик лицейдин окуу корпусу
+        </div>
+    </div>
+</div>
+
+<!-- Font Awesome иконалары үчүн -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</body>
+</html>
